@@ -1,12 +1,12 @@
 class Che < Formula
   desc "Dual-pane terminal file manager written in Rust"
   homepage "https://github.com/aroum/che"
-  version "26.8.7"
+  version "26.8.15"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/aroum/che/releases/download/v26.8.7/che-v26.8.7-x86_64-apple-darwin.zip"
-    sha256 "0b209ce09f32ddf205d8c9e3da5a1379ba6abbfd5290847cf833ea42efd019ab"
+    url "https://github.com/aroum/che/releases/download/v26.8.15/che-v26.8.15-x86_64-apple-darwin.zip"
+    sha256 "cf1a54299a199d74e17ee5132659bf8cd960882401f588688e11863b09b08f5b"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/aroum/che/releases/download/v0.2.0/che-v0.2.0-x86_64-apple-darwin.zip"
     sha256 "b6f53e24a666f0eb34a16ca5a8349a590b419e21b61c0a8b471587e95a9f5370"
