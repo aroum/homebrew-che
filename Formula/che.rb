@@ -1,21 +1,21 @@
 class Che < Formula
   desc "Dual-pane terminal file manager written in Rust"
   homepage "https://github.com/aroum/che"
-  version "26.8.28"
+  version "26.10.12"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/aroum/che/releases/download/v26.8.28/che-v26.8.28-aarch64-apple-darwin.zip"
-    sha256 "ce63bba7a8bf80a30ed03de5bf47e2d525772743d90ca5b901928fbe62bb93fc"
+    url "https://github.com/aroum/che/releases/download/v26.10.12/che-v26.10.12-aarch64-apple-darwin.zip"
+    sha256 "8061b64ae58743d26a4103f6f807cb21fef52bada5b27cc8a8f7feae347ac2c7"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/aroum/che/releases/download/v26.8.28/che-v26.8.28-x86_64-apple-darwin.zip"
-    sha256 "14dc882a43fe3440f2ad4a4fc31a76ddb3f8786fe3c6a22dadc4ba9e5f3af666"
+    url "https://github.com/aroum/che/releases/download/v26.10.12/che-v26.10.12-x86_64-apple-darwin.zip"
+    sha256 "a9a0e5bbebbd5d5c4aaa637f2f1172d77004f4f631d84cbe64cbad75b1c1e7bd"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/aroum/che/releases/download/v26.8.28/che-v26.8.28-aarch64-unknown-linux-gnu.zip"
-    sha256 "495f9f0f286d8ccbb77ee65f15e106320bf7fc03a4183db24f1cfd1444ae9adc"
+    url "https://github.com/aroum/che/releases/download/v26.10.12/che-v26.10.12-aarch64-unknown-linux-gnu.zip"
+    sha256 "c514cdb6dde99618e897df78f6422401c114aec3635b0f966fd872736fdc331d"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/aroum/che/releases/download/v26.8.28/che-v26.8.28-x86_64-unknown-linux-gnu.zip"
-    sha256 "15296724cbc6bde3b2b6f65d4ff69587759d2788cde3473050fc9fe319b36ce5"
+    url "https://github.com/aroum/che/releases/download/v26.10.12/che-v26.10.12-x86_64-unknown-linux-gnu.zip"
+    sha256 "2183abdfe8fe292bedcfe133e0fcc13219ad1f29bf8d9e7b47cd6c2840c274f7"
   end
 
   def install
