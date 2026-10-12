@@ -5,17 +5,17 @@ class Che < Formula
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/aroum/che/releases/download/v26.8.28/che-v26.8.28-aarch64-apple-darwin.zip"
+    sha256 "ce63bba7a8bf80a30ed03de5bf47e2d525772743d90ca5b901928fbe62bb93fc"
+  elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/aroum/che/releases/download/v26.8.28/che-v26.8.28-x86_64-apple-darwin.zip"
     sha256 "14dc882a43fe3440f2ad4a4fc31a76ddb3f8786fe3c6a22dadc4ba9e5f3af666"
-  elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/aroum/che/releases/download/v0.2.0/che-v0.2.0-x86_64-apple-darwin.zip"
-    sha256 "b6f53e24a666f0eb34a16ca5a8349a590b419e21b61c0a8b471587e95a9f5370"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/aroum/che/releases/download/v0.2.0/che-v0.2.0-aarch64-unknown-linux-gnu.zip"
-    sha256 "9a490b7b006fb0e8dde7985c62b1fbaf62a17612610531d2a4fcddfec1bb65f3"
+    url "https://github.com/aroum/che/releases/download/v26.8.28/che-v26.8.28-aarch64-unknown-linux-gnu.zip"
+    sha256 "495f9f0f286d8ccbb77ee65f15e106320bf7fc03a4183db24f1cfd1444ae9adc"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/aroum/che/releases/download/v0.2.0/che-v0.2.0-x86_64-unknown-linux-gnu.zip"
-    sha256 "3157d1df2186076f81ab96eb0f7df2201827ea65e93e65ac50ddb379115745ac"
+    url "https://github.com/aroum/che/releases/download/v26.8.28/che-v26.8.28-x86_64-unknown-linux-gnu.zip"
+    sha256 "15296724cbc6bde3b2b6f65d4ff69587759d2788cde3473050fc9fe319b36ce5"
   end
 
   def install
